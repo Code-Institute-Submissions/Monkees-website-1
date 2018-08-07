@@ -1,0 +1,32 @@
+.container-fluid {
+	text-align: center;
+}
+
+section {
+	text-align: center;
+}
+
+section img {
+	width: 70%;
+	border-radius: 50px;
+	min-width: 250px;
+}
+
+.commercial {
+	color: #eec802;
+}
+
+ul {
+	list-style: square;
+	text-align: left;
+	font-size: 2rem;
+}
+
+button {
+	width: 200px;
+	margin: 25px;
+}
+
+.concert-offer {
+	margin-bottom: 25px;
+}

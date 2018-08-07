@@ -1,0 +1,27 @@
+.main-gallery {
+	width: 90%;
+}
+
+img {
+	width: 250px;
+	height: 225px;
+	padding-bottom: 25px;
+}
+
+nav img {
+	padding-bottom: 0;
+}
+
+h4 {
+	padding: 25px;
+}
+
+a {
+	color: #DF7401;
+}
+
+a:hover {
+	color: #eec802;
+	transition: .5s ease-in-out;
+	text-decoration: none;
+}

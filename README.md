@@ -10,3 +10,10 @@ the section are short versions of they full pages which You can get to by choosi
 The page was check at html validator, css validator, and all main functions like transitions were checked manually
 while media queries were check at google chrome programistic tools.
 
+
+UPDATE
+
+
+Added few images, new css files and pages.
+Checked on google chrome webdev tools.
+

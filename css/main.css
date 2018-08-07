@@ -91,7 +91,7 @@ nav a.list:hover {
 /* MAIN */
 
 hr {
-	height: 7px;
+	height: 5px;
 	background-color: #eec802;
 	border: 1px solid #eec802;
 	width: 70vw;
@@ -118,11 +118,14 @@ hr {
 h1 {
 	font-size: 4rem;
 	letter-spacing: 5px;
+	color: #eec802;
+	text-align: center;
 }
 
 h2 {
 	color: #eec802;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 h3 {
@@ -299,6 +302,17 @@ video {
 .timeline-item h4 {
 	text-align: left;
 	text-transform: uppercase;
+}
+
+/* BUTTON */
+
+button {
+	width: 200px;
+	margin: 25px;
+}
+
+.container-button {
+	text-align: center;
 }
 
 /* FOOTER */
