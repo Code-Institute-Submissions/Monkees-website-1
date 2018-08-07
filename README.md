@@ -17,3 +17,8 @@ UPDATE
 Added few images, new css files and pages.
 Checked on google chrome webdev tools.
 
+UPDATE
+
+Added contact page with form.
+Last checks.
+
