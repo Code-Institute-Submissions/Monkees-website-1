@@ -133,7 +133,7 @@ h3 {
 	text-align: center;
 }
 
-h4 {
+h4, h5 {
 	color: #eec802;
 	text-align: center;
 }
@@ -308,11 +308,28 @@ video {
 
 button {
 	width: 200px;
-	margin: 25px;
+	margin-bottom: 25px;
 }
 
 .container-button {
 	text-align: center;
+}
+
+/* FORM */
+
+.form-control {
+	margin: 25px;
+}
+
+.center-form {
+	width: 90%;
+}
+
+/* CONTACT SECTION */
+
+.contact-image {
+	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
 /* FOOTER */
@@ -424,7 +441,4 @@ footer {
 		padding: 0;
 	}
 }
-
-
-
 
