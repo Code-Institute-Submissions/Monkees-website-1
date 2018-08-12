@@ -47,10 +47,24 @@ hr {
 	margin-bottom: 200px;
 }
 
+span {
+	color: white;
+	font-size: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1023px) {
 	.second {
 		visibility: hidden;
+	}
+}
+
+@media (max-width: 524px) {
+	span {
+		visibility: hidden;
+		font-size: 1px;
 	}
 }
