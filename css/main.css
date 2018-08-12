@@ -307,8 +307,17 @@ video {
 /* BUTTON */
 
 button {
-	width: 200px;
 	margin-bottom: 25px;
+	width: 200px;
+	height: 35px;
+	border-radius: 15px;
+	color: black;
+	background-color: #eec802;
+}
+
+button:hover {
+	background-color: #DF7401;
+	transition: .5s ease-in-out;
 }
 
 .container-button {
