@@ -1,12 +1,10 @@
 THE MONKEES WEBSITE
 
 This is a monkees website very well known rock band.
-It's a simple site containing information, gallery, form.
+It's a simple site containing information, gallery, contact form.
 
 UX
 This website is made for existing and future supporters of The Monkees as well as for customers who would like to hire them.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 
 As a user type, I want to get information about concert tour - i can find it on main page in section where to see us. alternatively i can click the link on top alert.
 As a user i would like to see the gallery wchich i can go to from navigation bar.
@@ -36,17 +34,12 @@ Check navigation links and footer>social links are working.
 
 
 Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The website was deployed on github pages.
+before deployment it was checked localy, od on c9 ide.
+You can run code locally by double cliking on main.html
 
 Credits
 Content
-The text for section History was copied from the Wikipedia article Z
+The text for section History was copied from the Wikipedia article The_Monkees
 Media
 The photos used in this site were obtained from Code Institute github, pixabay.com and google search engine.
