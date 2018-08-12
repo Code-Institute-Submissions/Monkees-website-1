@@ -19,6 +19,10 @@ a:hover {
 }
 
 .main-history p {
+	color: white;
+}
+
+.bottom-history {
 	text-align: center;
 	font-size: 2rem;
 	padding: 20px;
