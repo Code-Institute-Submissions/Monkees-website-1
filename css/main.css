@@ -342,6 +342,12 @@ button:hover {
 	margin-bottom: 30px;
 }
 
+.click-radio {
+	text-align: center;
+	color: #eec802;
+	margin-bottom: 15px;
+}
+
 /* FOOTER */
 
 footer {

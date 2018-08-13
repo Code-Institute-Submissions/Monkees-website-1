@@ -64,7 +64,6 @@ span {
 
 @media (max-width: 524px) {
 	span {
-		visibility: hidden;
-		font-size: 1px;
+		font-size: 5px;
 	}
 }
