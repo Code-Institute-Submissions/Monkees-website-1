@@ -1,4 +1,4 @@
-.container-fluid {
+.centered {
 	text-align: center;
 }
 
@@ -16,15 +16,10 @@ section img {
 	color: #eec802;
 }
 
-ul {
+.concert-features {
 	list-style: square;
 	text-align: left;
 	font-size: 2rem;
-}
-
-button {
-	width: 200px;
-	margin: 25px;
 }
 
 .concert-offer {

@@ -41,51 +41,64 @@ body {
 }
 
 /* NAVIGATION */
-
-nav {
-	background-color: black;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-	font-size: 0;
-	height: 8.5rem;
+.active {
+	border: 1px solid #eec803;
+    border-radius: 15px;
+    background-color: #080808;
+}
+.navbar-default {
+    background-color: #2E2E2E;
+    border-color: #2E2E2E;
 }
 
-nav img {
+.no-radius {
+	border-radius: 0;
+}
+
+nav {
+	top: 30px;
+	left: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #eec802;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #eec802;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #eec802;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #eec802;
+}
+
+.navbar-default .navbar-nav>li>a {
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #DF3A01;
+}
+
+.nav-image {
 	width: 7.5rem;
 	height: 5rem;
 }
 
-nav a {
-  font-family: Arial, sans-serif;
-  font-size: 1.4rem;
-  color: white;
-  text-align: center;
-  border-radius: 25px;
-  line-height: 2rem;
-  margin-right: .5rem;
-  margin-left: .5rem;
-  display: inline-block;
-  width: 7.5rem;
-  float: right;
-  margin-top: 2.5rem;
-
+.navbar-brand {
+	width: 100px;
+	padding: 0;
 }
 
-.active {
-	border: 1px solid grey;
-}
-
-nav a.list:hover {
-	background-color: white;
-	color: black;
-	transition: .5s ease-in-out;
-	text-decoration: none;
-}
-
-.left {
-	float: left;
-	margin-top: 1rem;
-	margin-left: 2rem;
+.navbar-header button {
+	width: 50px;
+	text-align: center;
 }
 
 /* MAIN */
@@ -314,6 +327,7 @@ button {
 	color: black;
 	background-color: #eec802;
 	border: none;
+	outline: 0;
 }
 
 button:hover {
@@ -384,6 +398,8 @@ footer {
 
 @media (max-width: 767px) {
 	nav {
+		top: 0;
+		left: 0;
 		height: 6rem;
 		padding-top: 0;
 	}
@@ -391,11 +407,22 @@ footer {
 		margin-right: 0;
 		margin-left: 0;
 	}
+
+
+	.nav>li {
+	    background-color: rgba(0, 0, 0, 0.36);
+	}
+
+	.navbar-brand {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
 	.nav-alert {
 		visibility: hidden;
 	}
 	.main-image {
 		height: 20vh;
+		margin-top: -50px;
 	}
 	.main-content {
 		display: block;
@@ -415,28 +442,16 @@ footer {
 	}
 	.concerts {
 		width: 70%;
-	}
 }
 
 @media (max-width: 524px) {
-	nav img {
-		visibility: hidden;
-	}
 	.concerts {
 		width: 90%;
 	}
 }
 
-@media (max-width: 469px) {
-	.main-image {
-		margin-top: -50px;
-	}
-}
-
-
 @media (max-width: 442px) {
 	nav {
-		height: 120px;
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
@@ -457,4 +472,3 @@ footer {
 		padding: 0;
 	}
 }
-
