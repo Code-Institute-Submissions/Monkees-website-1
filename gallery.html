@@ -6,8 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <style type="text/css">
+    .lightbox{
+      z-index: 1041;
+    }
+    .small-img{
+      width: 150px;height: 150px;
+    }
+  </style>
+	
 </head>
 <body>
 	<header>
@@ -52,56 +65,336 @@
 	</header>
 
 	<div class="container-fluid main-gallery">
-		<section class="container-fluid">
-			<hr>
-			<h3>Covers</h3>
-			<hr class="title-line">
-			<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/album.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/album2.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/cover.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/cover2.png" alt="gallery image">
-			</section>
-		</section>
-		<section class="container-fluid">
-			<hr>
-			<h3>Funny</h3>
-			<hr class="title-line">
-			<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/funny.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/funny1.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/funny2.png" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/funny3.jpg" alt="gallery image">
-			</section>
-		</section>
-		<section class="container-fluid">
-			<hr>
-			<h3>The Team</h3>
-			<hr class="title-line">
-			<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/dj.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/mn.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/md.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/pt.jpg" alt="gallery image">
-			</section>
-		</section>
-		<section class="container-fluid">
-			<hr>
-			<h3>Our Performance</h3>
-			<hr class="title-line">
-			<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/main.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/monkees.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/concert1.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/concert2.jpg" alt="gallery image">
-			</section>
-			<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/concert3.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/concert4.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/concert5.jpg" alt="gallery image">
-				<img class="col-xs-12 col-sm-6 col-md-6 col-lg-3" src="images/concert6.jpg" alt="gallery image">
-			</section>
-		</section>
+      <section class="container-fluid gallery-section">
+        <hr>
+        <h3>Covers</h3>
+        <hr class="title-line">
+        <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox">
+              <img src="images/album.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/album.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox1">
+              <img src="images/album2.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox1" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/album2.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox2">
+              <img src="images/cover.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox2" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/cover.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox3">
+              <img src="images/cover2.png" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox3" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/cover2.png" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </section>
+    <section class="container-fluid gallery-section">
+      <hr>
+      <h3>Funny</h3>
+      <hr class="title-line">
+      <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox4">
+              <img src="images/funny.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox4" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/funny.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox5">
+              <img src="images/funny1.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox5" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/funny1.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox6">
+              <img src="images/funny2.png" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox6" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/funny2.png" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox7">
+              <img src="images/funny3.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox7" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/funny3.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </section>
+    <section class="container-fluid gallery-section">
+      <hr>
+      <h3>The Team</h3>
+      <hr class="title-line">
+      <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox8">
+              <img src="images/dj.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox8" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/dj.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox9">
+              <img src="images/mn.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox9" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/mn.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox10">
+              <img src="images/md.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox10" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/md.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox11">
+              <img src="images/pt.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox11" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/pt.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </section>
+    <section class="container-fluid gallery-section">
+      <hr>
+      <h3>Our Performance</h3>
+      <hr class="title-line">
+      <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox12">
+              <img src="images/main.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox12" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/main.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox13">
+              <img src="images/monkees.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox13" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/monkees.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox14">
+              <img src="images/concert1.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox14" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/concert1.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox15">
+              <img src="images/concert2.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox15" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/concert2.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox16">
+              <img src="images/concert3.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox16" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/concert3.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox17">
+              <img src="images/concert4.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox17" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/concert4.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox18">
+              <img src="images/concert5.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox18" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/concert5.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <a data-toggle="lightbox" href="#demoLightbox19">
+              <img src="images/concert6.jpg" class="small-img" alt="gallery image">
+            </a>
+            <div id="demoLightbox19" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+              <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                  <img src="images/concert6.jpg" alt="gallery image">
+                  <div class='lightbox-caption'>
+                      Click on empty field to exit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </section>
 		<hr>
 		<h4>You can find more potos on our <a href="https://www.instagram.com/themonkees/" target="_blank">Instagram</a> page.</h4>
 	</div>

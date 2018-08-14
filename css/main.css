@@ -12,6 +12,12 @@ body {
 	height: 100vh;
 }
 
+a:visited {
+	color: #eec802;
+	text-decoration: none;
+}
+
+
 
 /* NAVIGATION ALERT*/
 

@@ -1,5 +1,6 @@
 .main-gallery {
 	width: 90%;
+	text-align: center;
 }
 
 img {
@@ -24,24 +25,4 @@ a:hover {
 	color: #eec802;
 	transition: .5s ease-in-out;
 	text-decoration: none;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 767px) {
-	.gallery-section img {
-		height: 400px;
-	}
-}
-
-@media (max-width: 500px) {
-	.gallery-section img {
-		height: 300px;
-	}
-}
-
-@media (max-width: 400px) {
-	.gallery-section img {
-		height: 225px;
-	}
 }
