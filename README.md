@@ -35,8 +35,6 @@ Audio and Video player
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** for simple functions
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-    - The project uses JS for simple functions
 - [Bootstrap](https://getbootstrap.com/)
     - grid
 - [Font Awesome](https://fontawesome.com/)
@@ -64,7 +62,7 @@ Checked on tablet
 
 ## Deployment
 
-The website was deployed on github pages. before deployment it was checked localy, od on c9 ide. You can run code locally by double cliking on index.html
+The website was deployed on github pages [Monkees Website](https://losiek86.github.io/Monkees-website/index.html). before deployment it was checked localy, od on c9 ide. You can run code locally by double cliking on index.html
 
 ### Content
 - The text for section History was copied from the Wikipedia article [The_Monkees](https://en.wikipedia.org/wiki/The_Monkees)
